@@ -23,7 +23,7 @@ export const Header: React.FC<HeaderProps> = ({
           Manielados
         </h1>
         <p className="text-xs sm:text-sm font-lato text-[#FBB404] tracking-widest uppercase font-bold mt-0.5">
-          Heladería Artesanal Dominicana
+          Helados en fundita artesanales, San José de Ocoa
         </p>
       </div>
 
