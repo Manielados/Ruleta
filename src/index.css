@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --color-dark-bg: #002c22;
+  --color-green-main: #006045;
+  --color-green-dark: #0f271c;
+  --color-orange: #e07101;
+  --color-gold: #fbb404;
+  --color-cream: #faf8e5;
+  --color-light-bulb: #fae7a0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #02120d;
+  background-image: radial-gradient(circle at 50% 40%, #003e30 0%, #002c22 45%, #081a13 80%, #010805 100%);
+  color: #faf8e5;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-serif-display {
+  font-family: 'DM Serif Display', serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Casino lights glow animation */
+@keyframes bulb-glow-a {
+  0%, 100% {
+    fill: #fae7a0;
+    filter: drop-shadow(0 0 5px #fbb404) drop-shadow(0 0 10px #fbb404);
+    opacity: 1;
+  }
+  50% {
+    fill: #7d6020;
+    filter: none;
+    opacity: 0.4;
+  }
+}
+
+@keyframes bulb-glow-b {
+  0%, 100% {
+    fill: #7d6020;
+    filter: none;
+    opacity: 0.4;
+  }
+  50% {
+    fill: #fae7a0;
+    filter: drop-shadow(0 0 5px #fbb404) drop-shadow(0 0 10px #fbb404);
+    opacity: 1;
+  }
+}
+
+.light-bulb-even {
+  animation: bulb-glow-a 1.2s infinite ease-in-out;
+}
+
+.light-bulb-odd {
+  animation: bulb-glow-b 1.2s infinite ease-in-out;
+}
+
+/* Fast lights animation when spinning */
+.spinning .light-bulb-even {
+  animation: bulb-glow-a 0.25s infinite ease-in-out;
+}
+.spinning .light-bulb-odd {
+  animation: bulb-glow-b 0.25s infinite ease-in-out;
+}
+

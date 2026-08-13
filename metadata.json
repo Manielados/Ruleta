@@ -1,0 +1,6 @@
+{
+  "name": "Manielados - Ruleta de Premios",
+  "description": "Ruleta de premios interactiva estilo casino para Manielados, heladería artesanal dominicana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
